@@ -35,8 +35,11 @@ var triggerAppOpen = function() {
   openApp();
   setTimeout(fallbackToStore, 700);
 };
+  if (navigator.userAgent.match(/Android/i)) {
+            triggerAppOpen();
+            
+   }
 
-triggerAppOpen();
 
 </script>
 </head>
