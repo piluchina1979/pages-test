@@ -37,14 +37,14 @@ var triggerAppOpen = function() {
   setTimeout(fallbackToStore, 700);
 };
 
-$(document).ready(function(){
-    $(".js_smartbanner__button").click(function(){
+
+ $(window).on("load", function() {
+   $(".js_smartbanner__button").click(function(){
        if (navigator.userAgent.match(/Android/i)) {
             triggerAppOpen();
        }
     });
 });
- 
 
 </script>
 </head>
