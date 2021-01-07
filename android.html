@@ -21,6 +21,24 @@
   
  <!-- <link rel="stylesheet" href="smartbanner.css">
   <script src="smartbanner.js?3" id="ios-banner"></script>-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+
+
+var fallbackToStore = function() {
+  window.location.replace('https://play.google.com/store/apps/details?id=packgename');
+};
+var openApp = function() {
+  window.location.replace('intent://app/SplashScreen#Intent;scheme=app_;package=com.sdf.android.dsds;end');
+};
+var triggerAppOpen = function() {
+  openApp();
+  setTimeout(fallbackToStore, 700);
+};
+
+triggerAppOpen();
+
+</script>
 </head>
 <body>
   <h1>Hola android</h1>
