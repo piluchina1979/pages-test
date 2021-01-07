@@ -41,6 +41,7 @@ var triggerAppOpen = function() {
  $(window).on("load", function() {
    $(".js_smartbanner__button").click(function(){
        if (navigator.userAgent.match(/Android/i)) {
+           $(".js_smartbanner__button").attr("href","#");
             triggerAppOpen();
        }
     });
